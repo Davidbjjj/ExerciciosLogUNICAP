@@ -1,4 +1,4 @@
-package Exercicios;
+package Exercicios.Lista1;
 
 public class exer7 {
     public static void main(String[] args){
