@@ -6,11 +6,11 @@ public class exer10 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        double somaRenda = 0.0;
-        int totalHabitantes = 0;
-        int totalFilhos = 0;
+        double smRenda = 0.0;
+        int ttlHabitantes = 0;
+        int ttlFilhos = 0;
         double maiorSalario = Double.MIN_VALUE;
-        int habitantesComRendaMenor200 = 0;
+        int habtmn200 = 0;
 
         while (true) {
             System.out.println("Digite a renda do habitante (ou um valor negativo para encerrar): ");
@@ -23,23 +23,23 @@ public class exer10 {
             System.out.println("Digite o número de filhos do habitante: ");
             int filhos = scanner.nextInt();
 
-            somaRenda += renda;
-            totalHabitantes++;
-            totalFilhos += filhos;
+            smRenda += renda;
+            ttlHabitantes++;
+            ttlFilhos+= filhos;
 
             if (renda > maiorSalario) {
                 maiorSalario = renda;
             }
 
             if (renda < 200) {
-                habitantesComRendaMenor200++;
+                habtmn200++;
             }
         }
 
-        if (totalHabitantes > 0) {
-            double rendaMedia = somaRenda / totalHabitantes;
-            double mediaFilhos = (double) totalFilhos / totalHabitantes;
-            double percentualMenor200 = (double) habitantesComRendaMenor200 / totalHabitantes * 100;
+        if (ttlHabitantes > 0) {
+            double rendaMedia = smRenda / ttlHabitantes;
+            double mediaFilhos = (double) ttlFilhos / ttlHabitantes;
+            double percentualMenor200 = (double) habtmn200 / ttlHabitantes * 100;
 
             System.out.println("Renda média da população: " + rendaMedia);
             System.out.println("Média do número de filhos: " + mediaFilhos);
