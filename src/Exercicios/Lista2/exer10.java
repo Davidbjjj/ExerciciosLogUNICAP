@@ -41,7 +41,8 @@ public class exer10 {
             double mediaFilhos = (double) ttlFilhos / ttlHabitantes;
             double percentualMenor200 = (double) habtmn200 / ttlHabitantes * 100;
 
-            System.out.println("Renda média da população: " + rendaMedia);
+            System.out.println("Renda médi" +
+                    "0, da população: " + rendaMedia);
             System.out.println("Média do número de filhos: " + mediaFilhos);
             System.out.println("Maior salário dos habitantes: " + maiorSalario);
             System.out.println("Percentual de habitantes com renda menor que R$ 200,00: " + percentualMenor200 + "%");
