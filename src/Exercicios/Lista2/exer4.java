@@ -15,17 +15,15 @@ public class exer4 {
             System.out.println("Digite o valor do lado C do triângulo: ");
             double c = scanner.nextDouble();
 
-            if (eTriangulo(a, b, c)) {
-                System.out.println("Os valores formam um triângulo.");
-            } else {
-                System.out.println("Os valores não formam um triângulo.");
+            if (triandulo(a,b,c)){
+                System.out.println("é um triangulo possível");
+            }else {
+                System.out.println("não pode ser um triangulo");
             }
 
-            scanner.close();
         }
+        public static boolean triandulo(double a, double b, double c) {
+             return ((a < b + c) && (b < a + c) && (c < a + b));
 
-        public static boolean eTriangulo(double a, double b, double c) {
-            // Para formar um triângulo, cada lado deve ser menor que a soma dos outros 2 lados.
-            return (a < b + c) && (b < a + c) && (c < a + b);
         }
 }
