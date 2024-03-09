@@ -7,9 +7,9 @@ function verificarMaioridade(dataNascimento) {
     var idade = Math.floor(diferencaMilissegundos / (1000 * 60 * 60 * 24 * 365.25));
     
     if (idade >= 18) {
-        return "Você é maior de idade.";
+        return alert("Você é maior de idade.");
     } else {
-        return "Você é menor de idade.";
+        return alert("Você é menor de idade.");
     }
 }
 
