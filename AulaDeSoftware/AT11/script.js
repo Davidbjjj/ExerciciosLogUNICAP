@@ -2,7 +2,7 @@
 function searchMovies() {
     const apiKey = '29334a08';
     const searchInput = document.getElementById('searchInput').value;
-    const url = "http://www.omdbapi.com/?apikey="+apiKey+"&s="+searchInput;
+    const url = "https://www.omdbapi.com/?apikey="+apiKey+"&s="+searchInput;
   
   
     document.getElementById('movieResults').innerHTML = '';
