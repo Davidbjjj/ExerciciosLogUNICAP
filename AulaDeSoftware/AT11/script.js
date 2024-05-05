@@ -1,13 +1,13 @@
-// Função para buscar filmes
+
 function searchMovies() {
-    const apiKey = '29334a08'; // Insira sua chave de API do OMDb aqui
+    const apiKey = '29334a08';
     const searchInput = document.getElementById('searchInput').value;
-    const url = `http://www.omdbapi.com/?apikey=${apiKey}&s=${searchInput}`;
+    const url = "http://www.omdbapi.com/?apikey="+apiKey+"&s="+searchInput;
   
-    // Limpar resultados anteriores
+  
     document.getElementById('movieResults').innerHTML = '';
   
-    // Fazer a requisição para a API
+
     fetch(url)
       .then(response => response.json())
       .then(data => {
